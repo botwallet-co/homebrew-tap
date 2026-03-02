@@ -11,7 +11,7 @@ class Botwallet < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.1/botwallet_0.1.0-beta.1_darwin_amd64.tar.gz"
-      sha256 "fb1cb5064102b5785a0f95beb3b4c03daf3a6692331db9132928b3045bf31aaa"
+      sha256 "2c66191fa0e1c09770cabd6faadf61166b77f550c0d60b645f6a33c693cdb2e3"
 
       define_method(:install) do
         bin.install "botwallet"
@@ -19,7 +19,7 @@ class Botwallet < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.1/botwallet_0.1.0-beta.1_darwin_arm64.tar.gz"
-      sha256 "dab03e2cc847664872ba7ab07a05bbf26c133d4668568a5503eba9c307f4dfa8"
+      sha256 "a9efde13fe6041ff083a2f6562c451354b025848c82b760b6725bf03725c747f"
 
       define_method(:install) do
         bin.install "botwallet"
@@ -30,14 +30,14 @@ class Botwallet < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.1/botwallet_0.1.0-beta.1_linux_amd64.tar.gz"
-      sha256 "bb0a513fa69762744f304cabe9e76a1000d00be3265503ed9ac2b7d03d2f4130"
+      sha256 "a130ef22040a8eb5745893bc4274c2d10e68968eb06825b74400c8e3dc349fc7"
       define_method(:install) do
         bin.install "botwallet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.1/botwallet_0.1.0-beta.1_linux_arm64.tar.gz"
-      sha256 "5beb3a6636606e24b6639ef065a3ef3e4ff5710ffddabd1ce2e39d9f336a8a14"
+      sha256 "033a7805780db84950e35f86b780c35b08157b12718c049d4d67cbc37b05034e"
       define_method(:install) do
         bin.install "botwallet"
       end
