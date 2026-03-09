@@ -5,21 +5,21 @@
 class Botwallet < Formula
   desc "CLI for AI agents to manage their Botwallet accounts"
   homepage "https://botwallet.co"
-  version "0.1.0-beta.8"
+  version "0.1.0-beta.9"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.8/botwallet_0.1.0-beta.8_darwin_amd64.tar.gz"
-      sha256 "38fc1369219fa7dbd33567ced290fd778b7f9db37db7fa3232abcba995377379"
+      url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.9/botwallet_0.1.0-beta.9_darwin_amd64.tar.gz"
+      sha256 "ee695744d8cdbf18585a84ad4a051f570836a53e7b2226702815f0006cde2d87"
 
       define_method(:install) do
         bin.install "botwallet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.8/botwallet_0.1.0-beta.8_darwin_arm64.tar.gz"
-      sha256 "5ea9b5dd026c082ba56f90f8e5d0adafdb280bf8f7270515182d8ad576bf0148"
+      url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.9/botwallet_0.1.0-beta.9_darwin_arm64.tar.gz"
+      sha256 "037e2a78ae032d42dbcc5134b2d7a07dbe1471d46bd1b08690cf536babfb4a69"
 
       define_method(:install) do
         bin.install "botwallet"
@@ -29,15 +29,15 @@ class Botwallet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.8/botwallet_0.1.0-beta.8_linux_amd64.tar.gz"
-      sha256 "bb93d935749cc857cc5b3389d498b33dc4d55c71f6affcdc141426338da94657"
+      url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.9/botwallet_0.1.0-beta.9_linux_amd64.tar.gz"
+      sha256 "11d154214793ae24a42f7962504c31d24e4fdd0e8f1e6431ba4c5e9668dd1655"
       define_method(:install) do
         bin.install "botwallet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.8/botwallet_0.1.0-beta.8_linux_arm64.tar.gz"
-      sha256 "e1eab8d65035e9c1435123d609a4a04aef906acf4207a58f7a518b19a91a50df"
+      url "https://github.com/botwallet-co/agent-cli/releases/download/v0.1.0-beta.9/botwallet_0.1.0-beta.9_linux_arm64.tar.gz"
+      sha256 "5e6264a0e9ec08a38e7979f75baea1629e0a7a3dd9e4807fc73778d189774bac"
       define_method(:install) do
         bin.install "botwallet"
       end
